@@ -8,6 +8,7 @@ body{
   background-image: url(../img/tooopen_sy_163476769644.jpg),url(../img/office_underwater.png);
   background-repeat: no-repeat, no-repeat; 
   background-color: lightgray;
+  background-size: 5% 5%, cover;
   margin: 5px;
 }   
 
@@ -76,7 +77,8 @@ body{
 .box-spread_shadow        {box-shadow:  0px 0px  0px  3px black;       padding: 5px; margin: 20px;}
 .box-multi_shadow         {box-shadow:  0px 0px  0px 3px lightgray inset,
                                         0px 0px  0px 4px black inset,
-                                        2px 2px 10px 0px black;        padding: 5px; margin: 20px;}  
+                                        2px 2px 10px 0px black;        padding: 5px; margin: 20px;}
+
 
 .box-sizing{
   width: 120px;
@@ -111,16 +113,86 @@ body{
   background-color: white;
   background: linear-gradient(135deg,
       orangered   0%,
-      white      50%;
+      white      50%,
       orange    100%);
+}
+.button{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px dimgray;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+    background-color: blue;
+    background: linear-gradient(0deg,
+       #00679A,
+       #0081B4 50%,
+       #63B3D2 50%,
+       #BFE5F2 );
+}
+
+.transform{
+   font-size: 10px;
+   width: 100px;
+   text-align: center;
+   padding: 45px 0px;
+   margin: 20px;
+   background-color: mediumspringgreen;
+}
+.translateX{
+    transform: translateX(10px);
+}
+.translateY{
+    transform: translateY(10px);
+}
+.translate{
+    transform: translate(-20px, -5px);
+}
+.scale{
+    transform: scale(1.2);
+}
+.scaleY{
+    transform: scaleY(0.6);
+}
+.rotate{
+    transform: rotate(30deg);
+}
+.skewX{
+    transform: skewX(30deg);
+}
+.skewY{
+    transform: skewY(45deg);
+}
+.skew{
+    transform: skew(30deg, 45deg);
+}
+.transform-origin{
+    transform-origin: 0% 0%;
+    transform: rotate(30deg);
 }
 
 
-  
-  
-  
-  
-  
-  
-  
-  
+p.transition{
+    margin: 10px;
+}
+p.transition a{
+   background-color: mediumseagreen;
+   color: white;
+   font-size: 30px;
+   text-decoration: none;
+   padding: 5px;
+   transition:background-color 1s 0s, color 1s 1s;
+   transition-timing-function: ease-out, ease-in;
+}
+p.transition a:hover{
+    background-color: gold;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+
